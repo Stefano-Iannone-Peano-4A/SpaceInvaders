@@ -15,6 +15,8 @@ import javax.swing.WindowConstants;
 public class SpaceInvaders extends JFrame {
 
     public SpaceInvaders() throws InterruptedException {
+        this.setVisible(true);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Intro intro = new Intro();
         this.add(intro);
         this.pack();
@@ -23,6 +25,8 @@ public class SpaceInvaders extends JFrame {
     }
 
     public static void main(String[] args) throws InterruptedException {
+        SpaceInvaders gioco = new SpaceInvaders();
+        Space space = new Space();
     }
 
 }
